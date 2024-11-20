@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  data-theme="light"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Gallery Sangkar Indonesia</title>
+
+    <!-- Tailwind Output CSS -->
+    <link
+      href="./assets/css/output.css"
+      rel="stylesheet"
+    />
+
+    <!-- BoxIcons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-sans">
+    <header
+      id="header"
+      class="navbar fixed z-[100] flex justify-between items-center w-full transition-all duration-300 ease-in-out"
+    >
+      <div
+        id="header-content-wrapper"
+        class="w-full lg:max-w-[1272px] lg:mx-auto flex justify-between items-center text-white py-4 lg:py-5 transition-all duration-300 ease-in-out"
+      >
+        <div class="navbar-start flex justify-between items-center w-full lg:w-auto">
+          <a
+            href="/"
+            class="text-2xl lg:text-4xl font-semibold font-serif px-3 lg:px-4"
+            >Gallery <span class="text-primary">Sangkar</span> Indonesia</a
+          >
+          <nav class="dropdown">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost lg:hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 right-0 shadow"
+            >
+              <li>
+                <a
+                  class="font-medium"
+                  href="/#beranda"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  class="font-medium"
+                  href="/#produk"
+                  >Produk</a
+                >
+              </li>
+              <li>
+                <a
+                  class="font-medium"
+                  href="/#tentang-kami"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a
+                  class="font-medium"
+                  href="/#temukan-kami"
+                  >Temukan Kami</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <nav class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 gap-8">
+            <li>
+              <a
+                class="font-medium"
+                href="/#beranda"
+                ><i class="bx bx-home-alt text-lg"></i> Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-medium"
+                href="/#produk"
+                ><i class="bx bx-shopping-bag text-lg"></i> Produk</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-medium"
+                href="/#tentang-kami"
+                ><i class="bx bx-info-circle text-lg"></i> Tentang Kami</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-medium"
+                href="/#temukan-kami"
+                ><i class="bx bx-map-pin text-lg"></i> Temukan Kami</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- <div class="navbar-end hidden md:hidden lg:flex lg:w-fit">
+          <a class="btn bg-black text-white w-40">Kontak Kami</a>
+        </div> -->
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="hero min-h-screen"
+      id="beranda"
+      style="background-image: url(https://images.unsplash.com/photo-1444464666168-49d633b86797?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
+    >
+      <!-- Hero Overlay -->
+      <div class="hero-overlay bg-opacity-60"></div>
+
+      <!-- Hero Content -->
+      <div class="hero-content w-full justify-start text-neutral-content">
+        <div class="max-w-md lg:max-w-xl">
+          <h1 class="mb-5 font-serif text-5xl text-white md:text-6xl lg:text-8xl font-bold">Berbagai Jenis Sangkar Yang <span class="text-primary"> Berkualitas </span></h1>
+          <p class="mb-5">
+            Kami menyediakan berbagai jenis sangkar burung berkualitas tinggi dengan desain yang menarik dan bahan yang tahan lama. Dapatkan sangkar burung terbaik untuk teman bersayap Anda di
+            <span class="text-primary">Gallery Sangkar Indonesia</span>.
+          </p>
+          <button class="btn btn-primary text-white px-12 py-4">Lihat Produk Kami <i class="bx bx-right-arrow-alt text-lg"></i></button>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- Produk Section -->
+    <section
+      id="produk"
+      class="bg-base-100 py-12 lg:py-24 px-12 lg:px-0"
+    >
+      <h1 class="text-5xl lg:text-6xl font-semibold font-serif text-center">Produk kami</h1>
+
+      <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mx-auto mt-12 lg:mt-20">
+        <div class="card bg-base-100 shadow-xl group">
+          <figure class="relative">
+            <img
+              src="./assets/images/sangkar-1.jpg"
+              alt="Sangkar"
+            />
+
+            <div class="absolute -top-[100%] group-hover:top-0 transition-all duration-300 ease-in-out left-0 bg-white/50 w-full h-full flex justify-center items-center">
+              <a
+                href="#"
+                class="btn btn-primary text-white"
+                ><i class="bx bxs-cart-add text-lg"></i> Beli Sekarang</a
+              >
+            </div>
+          </figure>
+          <div class="card-body text-center flex justify-center items-center">
+            <h3 class="card-title mb-4">Sangkar Besi Warna Pink</h3>
+            <h2 class="text-primary text-2xl font-bold">Rp.299.000</h2>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl group">
+          <figure class="relative">
+            <img
+              src="./assets/images/sangkar-2.jpg"
+              alt="Sangkar"
+            />
+
+            <div class="absolute -top-[100%] group-hover:top-0 transition-all duration-300 ease-in-out left-0 bg-white/50 w-full h-full flex justify-center items-center">
+              <a
+                href="#"
+                class="btn btn-primary text-white"
+                ><i class="bx bxs-cart-add text-lg"></i> Beli Sekarang</a
+              >
+            </div>
+          </figure>
+          <div class="card-body text-center flex justify-center items-center">
+            <h3 class="card-title mb-4">Sangkar Besi Warna Hijau</h3>
+            <h2 class="text-primary text-2xl font-bold">Rp.299.000</h2>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl group">
+          <figure class="relative">
+            <img
+              src="./assets/images/sangkar-3.jpg"
+              alt="Sangkar"
+            />
+
+            <div class="absolute -top-[100%] group-hover:top-0 transition-all duration-300 ease-in-out left-0 bg-white/50 w-full h-full flex justify-center items-center">
+              <a
+                href="#"
+                class="btn btn-primary text-white"
+                ><i class="bx bxs-cart-add text-lg"></i> Beli Sekarang</a
+              >
+            </div>
+          </figure>
+          <div class="card-body text-center flex justify-center items-center">
+            <h3 class="card-title mb-4">Sangkar Besi Warna Hitam</h3>
+            <h2 class="text-primary text-2xl font-bold">Rp.299.000</h2>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl group">
+          <figure class="relative">
+            <img
+              src="./assets/images/sangkar-4.jpg"
+              alt="Sangkar"
+            />
+
+            <div class="absolute -top-[100%] group-hover:top-0 transition-all duration-300 ease-in-out left-0 bg-white/50 w-full h-full flex justify-center items-center">
+              <a
+                href="#"
+                class="btn btn-primary text-white"
+                ><i class="bx bxs-cart-add text-lg"></i> Beli Sekarang</a
+              >
+            </div>
+          </figure>
+          <div class="card-body text-center flex justify-center items-center">
+            <h3 class="card-title mb-4">Sangkar Besi Warna Biru</h3>
+            <h2 class="text-primary text-2xl font-bold">Rp.299.000</h2>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl group">
+          <figure class="relative">
+            <img
+              src="./assets/images/sangkar-5.jpg"
+              alt="Sangkar"
+            />
+
+            <div class="absolute -top-[100%] group-hover:top-0 transition-all duration-300 ease-in-out left-0 bg-white/50 w-full h-full flex justify-center items-center">
+              <a
+                href="#"
+                class="btn btn-primary text-white"
+                ><i class="bx bxs-cart-add text-lg"></i> Beli Sekarang</a
+              >
+            </div>
+          </figure>
+          <div class="card-body text-center flex justify-center items-center">
+            <h3 class="card-title mb-4">Sangkar Besi Warna Hijau</h3>
+            <h2 class="text-primary text-2xl font-bold">Rp.299.000</h2>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl group">
+          <figure class="relative">
+            <img
+              src="./assets/images/sangkar-6.jpg"
+              alt="Sangkar"
+            />
+
+            <div class="absolute -top-[100%] group-hover:top-0 transition-all duration-300 ease-in-out left-0 bg-white/50 w-full h-full flex justify-center items-center">
+              <a
+                href="#"
+                class="btn btn-primary text-white"
+                ><i class="bx bxs-cart-add text-lg"></i> Beli Sekarang</a
+              >
+            </div>
+          </figure>
+          <div class="card-body text-center flex justify-center items-center">
+            <h3 class="card-title mb-4">Sangkar Besi Warna Biru</h3>
+            <h2 class="text-primary text-2xl font-bold">Rp.299.000</h2>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl group">
+          <figure class="relative">
+            <img
+              src="./assets/images/sangkar-7.jpg"
+              alt="Sangkar"
+            />
+
+            <div class="absolute -top-[100%] group-hover:top-0 transition-all duration-300 ease-in-out left-0 bg-white/50 w-full h-full flex justify-center items-center">
+              <a
+                href="#"
+                class="btn btn-primary text-white"
+                ><i class="bx bxs-cart-add text-lg"></i> Beli Sekarang</a
+              >
+            </div>
+          </figure>
+          <div class="card-body text-center flex justify-center items-center">
+            <h3 class="card-title mb-4">Sangkar Besi Warna Kuning</h3>
+            <h2 class="text-primary text-2xl font-bold">Rp.299.000</h2>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl group">
+          <figure class="relative">
+            <img
+              src="./assets/images/sangkar-8.jpg"
+              alt="Sangkar"
+            />
+
+            <div class="absolute -top-[100%] group-hover:top-0 transition-all duration-300 ease-in-out left-0 bg-white/50 w-full h-full flex justify-center items-center">
+              <a
+                href="#"
+                class="btn btn-primary text-white"
+                ><i class="bx bxs-cart-add text-lg"></i> Beli Sekarang</a
+              >
+            </div>
+          </figure>
+          <div class="card-body text-center flex justify-center items-center">
+            <h3 class="card-title mb-4">Sangkar Besi Warna Pink</h3>
+            <h2 class="text-primary text-2xl font-bold">Rp.299.000</h2>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl group">
+          <figure class="relative">
+            <img
+              src="./assets/images/sangkar-9.jpg"
+              alt="Sangkar"
+            />
+
+            <div class="absolute -top-[100%] group-hover:top-0 transition-all duration-300 ease-in-out left-0 bg-white/50 w-full h-full flex justify-center items-center">
+              <a
+                href="#"
+                class="btn btn-primary text-white"
+                ><i class="bx bxs-cart-add text-lg"></i> Beli Sekarang</a
+              >
+            </div>
+          </figure>
+          <div class="card-body text-center flex justify-center items-center">
+            <h3 class="card-title mb-4">Sangkar Besi Warna Orange</h3>
+            <h2 class="text-primary text-2xl font-bold">Rp.299.000</h2>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl group">
+          <figure class="relative">
+            <img
+              src="./assets/images/sangkar-10.jpg"
+              alt="Sangkar"
+            />
+
+            <div class="absolute -top-[100%] group-hover:top-0 transition-all duration-300 ease-in-out left-0 bg-white/50 w-full h-full flex justify-center items-center">
+              <a
+                href="#"
+                class="btn btn-primary text-white"
+                ><i class="bx bxs-cart-add text-lg"></i> Beli Sekarang</a
+              >
+            </div>
+          </figure>
+          <div class="card-body text-center flex justify-center items-center">
+            <h3 class="card-title mb-4">Sangkar Besi Warna Abu-Abu</h3>
+            <h2 class="text-primary text-2xl font-bold">Rp.299.000</h2>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl group">
+          <figure class="relative">
+            <img
+              src="./assets/images/sangkar-11.jpg"
+              alt="Sangkar"
+            />
+
+            <div class="absolute -top-[100%] group-hover:top-0 transition-all duration-300 ease-in-out left-0 bg-white/50 w-full h-full flex justify-center items-center">
+              <a
+                href="#"
+                class="btn btn-primary text-white"
+                ><i class="bx bxs-cart-add text-lg"></i> Beli Sekarang</a
+              >
+            </div>
+          </figure>
+          <div class="card-body text-center flex justify-center items-center">
+            <h3 class="card-title mb-4">Sangkar Besi Warna Merah</h3>
+            <h2 class="text-primary text-2xl font-bold">Rp.299.000</h2>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl group">
+          <figure class="relative">
+            <img
+              src="./assets/images/sangkar-12.jpg"
+              alt="Sangkar"
+            />
+
+            <div class="absolute -top-[100%] group-hover:top-0 transition-all duration-300 ease-in-out left-0 bg-white/50 w-full h-full flex justify-center items-center">
+              <a
+                href="#"
+                class="btn btn-primary text-white"
+                ><i class="bx bxs-cart-add text-lg"></i> Beli Sekarang</a
+              >
+            </div>
+          </figure>
+          <div class="card-body text-center flex justify-center items-center">
+            <h3 class="card-title mb-4">Sangkar Besi Warna Biru</h3>
+            <h2 class="text-primary text-2xl font-bold">Rp.299.000</h2>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl group">
+          <figure class="relative">
+            <img
+              src="./assets/images/sangkar-13.jpg"
+              alt="Sangkar"
+            />
+
+            <div class="absolute -top-[100%] group-hover:top-0 transition-all duration-300 ease-in-out left-0 bg-white/50 w-full h-full flex justify-center items-center">
+              <a
+                href="#"
+                class="btn btn-primary text-white"
+                ><i class="bx bxs-cart-add text-lg"></i> Beli Sekarang</a
+              >
+            </div>
+          </figure>
+          <div class="card-body text-center flex justify-center items-center">
+            <h3 class="card-title mb-4">Sangkar Besi Warna Hitam</h3>
+            <h2 class="text-primary text-2xl font-bold">Rp.299.000</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Produk Section -->
+
+    <!-- Tentang Kami Section -->
+    <section
+      id="tentang-kami"
+      class="bg-base-200 py-12 lg:py-24 px-12 lg:px-0"
+    >
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-[40%_55%] gap-20 lg:gap-[5%]">
+        <div class="aspect-square relative">
+          <div class="absolute -bottom-6 -left-6 w-full h-full bg-primary/75 rounded-xl z-0"></div>
+
+          <div class="rounded-xl relative h-full w-full overflow-hidden z-10 shadow-xl">
+            <img
+              src="https://images.unsplash.com/photo-1611212799142-e45b3a4fc47d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGJpcmQlMjBjYWdlfGVufDB8MXwwfHx8Mg%3D%3D"
+              alt="Tentang Kami"
+              class="w-full h-full object-fill hover:scale-110 transition-all duration-300 ease-in-out"
+            />
+          </div>
+        </div>
+        <div class="w-full h-full">
+          <span class="badge badge-primary px-5 py-4 text-white text-base lg:text-lg font-medium mb-4">Gallery Sangkar Indonesia</span>
+          <h1 class="font-serif text-4xl md:text-6xl lg:text-8xl font-bold mb-8">Tentang <span class="text-primary">Gallery Sangkar Indonesia</span>.</h1>
+          <p class="text-base lg:text-lg text-base-content mb-12">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos nulla laboriosam molestiae officiis dolore officia exercitationem soluta consectetur nemo facilis aliquam sed recusandae voluptates pariatur temporibus culpa
+            distinctio quidem laborum dignissimos veniam aperiam, earum asperiores! Odit minima ea, a in placeat facilis cum eos? Quae cumque dolor modi libero aliquam?
+          </p>
+          <a
+            href="#temukan-kami"
+            class="btn btn-primary text-white"
+            >Temukan Kami <i class="bx bx-map text-lg"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- End Tentang Kami Section -->
+
+    <!-- Temukan Kami Section -->
+    <section
+      id="temukan-kami"
+      class="min-h-screen bg-base-100 py-12 lg:py-24 px-12 lg:px-0"
+    >
+      <div class="container grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto mt-12 lg:mt-20">
+        <div>
+          <h1 class="text-6xl lg:text-8xl font-semibold font-serif">Temukan Kami</h1>
+          <p class="mt-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos odit amet aut enim molestias fugit reprehenderit pariatur laboriosam, ea maxime.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="shadow-lg p-5 rounded-xl border-b-4 border-b-primary">
+            <div class="bg-primary/75 w-20 h-20 flex justify-center items-center rounded-xl">
+              <i class="bx bxl-whatsapp text-4xl text-white"></i>
+            </div>
+
+            <h4 class="text-2xl mt-4 font-semibold">Whatsapp</h4>
+            <p class="text-lg mt-4">
+              <a href="#">+62 818-545-050</a>
+            </p>
+          </div>
+
+          <div class="shadow-lg p-5 rounded-xl border-b-4 border-b-primary">
+            <div class="bg-primary/75 w-20 h-20 flex justify-center items-center rounded-xl">
+              <i class="bx bx-map text-4xl text-white"></i>
+            </div>
+
+            <h4 class="text-2xl mt-4 font-semibold">Alamat</h4>
+            <p class="text-lg mt-4">
+              <a href="#">Jl. Lorem Ipsum. Gang Dolor Sit Amet</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mapswrapper container mx-auto mt-20 w-full">
+        <iframe
+          width="600"
+          height="500"
+          loading="lazy"
+          allowfullscreen
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=New%20York&zoom=10&maptype=roadmap"
+        ></iframe
+        ><a href="https://www.zrivo.com/new-jersey-paycheck-calculator">New Jersey Paycheck Calculator</a
+        ><style>
+          .mapswrapper {
+            background: #fff;
+            position: relative;
+          }
+          .mapswrapper iframe {
+            border: 0;
+            position: relative;
+            z-index: 2;
+            width: 100%;
+          }
+          .mapswrapper a {
+            color: rgba(0, 0, 0, 0);
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 0;
+          }
+        </style>
+      </div>
+    </section>
+    <!-- End Temukan Kami Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer footer-center bg-primary text-white p-4">
+      <aside>
+        <p>Copyright © 2025 - Gallery Sangkar Indonesia</p>
+      </aside>
+    </footer>
+    <!-- End Footer Section -->
+
+    <!-- Custom JS -->
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
