@@ -1,6 +1,12 @@
 const header = document.querySelector("header#header");
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("header#header ul.menu-horizontal li a");
+const sangkarBesiCard = document.getElementById("sangkar-besi");
+const sangkarBesiCardImage = sangkarBesiCard.querySelector("img");
+const sangkarBesiColorOptions = sangkarBesiCard.querySelectorAll("ul li");
+const sangkarKayuCard = document.getElementById("sangkar-kayu");
+const sangkarKayuCardImage = sangkarKayuCard.querySelector("img");
+const sangkarKayuColorOptions = sangkarKayuCard.querySelectorAll("ul li");
 
 // Add or remove the 'header-scrolled' class based on scroll position
 document.addEventListener("scroll", () => {
@@ -45,3 +51,24 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe each section
 sections.forEach((section) => observer.observe(section));
+
+// Add event listeners to the color options
+sangkarBesiColorOptions.forEach((option) => {
+  option.addEventListener("click", () => {
+    const imageSrc = option.className;
+
+    sangkarBesiCardImage.src = `./assets/images/${imageSrc}.jpg`;
+  });
+});
+
+console.log(sangkarKayuColorOptions);
+
+sangkarKayuColorOptions.forEach((option) => {
+  option.addEventListener("click", () => {
+    const imageSrc = option.className;
+
+    console.log(imageSrc);
+
+    sangkarKayuCardImage.src = `./assets/images/${imageSrc}.jpg`;
+  });
+});
