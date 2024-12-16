@@ -8,6 +8,17 @@ const sangkarKayuCard = document.getElementById("sangkar-kayu");
 const sangkarKayuCardImage = sangkarKayuCard.querySelector("img");
 const sangkarKayuColorOptions = sangkarKayuCard.querySelectorAll("ul li");
 
+// 2. Copy Selector Card dan sesuaikan dengan selector yang ada di HTML
+const sangkarAluminiumCard = document.getElementById("sangkar-aluminium");
+const sangkarAluminiumCardImage = sangkarAluminiumCard.querySelector("img");
+const sangkarAluminiumColorOptions = sangkarAluminiumCard.querySelectorAll("ul li");
+
+const loader = document.getElementById("loader");
+
+setTimeout(() => {
+  loader.style.display = "none";
+}, 1500);
+
 // Add or remove the 'header-scrolled' class based on scroll position
 document.addEventListener("scroll", () => {
   if (window.scrollY > 75) {
@@ -61,8 +72,6 @@ sangkarBesiColorOptions.forEach((option) => {
   });
 });
 
-console.log(sangkarKayuColorOptions);
-
 sangkarKayuColorOptions.forEach((option) => {
   option.addEventListener("click", () => {
     const imageSrc = option.className;
@@ -70,5 +79,17 @@ sangkarKayuColorOptions.forEach((option) => {
     console.log(imageSrc);
 
     sangkarKayuCardImage.src = `./assets/images/${imageSrc}.jpg`;
+  });
+});
+
+// 3. Gunakan Selector Card Options Untuk Looping
+sangkarAluminiumColorOptions.forEach((option) => {
+  option.addEventListener("click", () => {
+    const imageSrc = option.className;
+
+    console.log(imageSrc);
+
+    // 4. Sesuaikan dengan selector yang ada di HTML supaya gambar bisa keganti
+    sangkarAluminiumCardImage.src = `./assets/images/${imageSrc}.jpg`;
   });
 });

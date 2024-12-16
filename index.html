@@ -24,6 +24,14 @@
     />
   </head>
   <body class="font-sans">
+    <div
+      id="loader"
+      class="fixed top-0 left-0 right-0 bottom-0 z-[9999] bg-white flex flex-col justify-center items-center w-full h-full"
+    >
+      <span class="loading loading-ring w-[5rem] mb-4"></span>
+      <h1 class="text-2xl lg:text-4xl font-semibold font-serif">Gallery <span class="text-primary">Sangkar</span> Indonesia</h1>
+    </div>
+
     <header
       id="header"
       class="navbar fixed z-[100] flex justify-between items-center w-full transition-all duration-300 ease-in-out"
@@ -340,6 +348,100 @@
             <div class="mt-2">
               <h3 class="card-title text-2xl mb-4">Sangkar Kayu Berwarna</h3>
               <h2 class="text-primary text-3xl font-bold mb-6">Rp.199.000</h2>
+              <a
+                href="https://wa.me/6282142853691?text=Saya%20ingin%20membeli%20sangkar"
+                class="btn btn-primary text-white"
+                ><i class="bx bxs-cart-add text-lg"></i> Beli Sekarang</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 1. Copy Card dan jangan lupa ganti ID nya -->
+        <div
+          class="card bg-base-100 shadow-xl group flex-col lg:flex-row"
+          id="sangkar-aluminium"
+        >
+          <figure class="relative lg:max-w-[50%] max-w-full w-full lg:min-w-[50%] min-w-full lf:rounded-es-[inherit] lg:rounded-se-none">
+            <img
+              src="./assets/images/sangkar-besi-biru-muda.jpg"
+              alt="Sangkar"
+              class="w-full h-full"
+            />
+          </figure>
+          <div class="card-body flex justify-between">
+            <div>
+              <h2 class="card-title mb-6">Pilihan Warna</h2>
+              <ul class="flex gap-8 flex-wrap">
+                <li class="sangkar-besi-pink">
+                  <button class="flex items-center gap-2">
+                    <div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+                      <div class="w-full h-full bg-pink-500 rounded-full"></div>
+                    </div>
+                    <span class="font-medium">Pink</span>
+                  </button>
+                </li>
+                <li class="sangkar-besi-orange">
+                  <button class="flex items-center gap-2">
+                    <div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+                      <div class="w-full h-full bg-yellow-500 rounded-full"></div>
+                    </div>
+                    <span class="font-medium">Orange</span>
+                  </button>
+                </li>
+                <li class="sangkar-besi-hijau">
+                  <button class="flex items-center gap-2">
+                    <div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+                      <div class="w-full h-full bg-green-500 rounded-full"></div>
+                    </div>
+                    <span class="font-medium">Hijau</span>
+                  </button>
+                </li>
+                <li class="sangkar-besi-kuning">
+                  <button class="flex items-center gap-2">
+                    <div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+                      <div class="w-full h-full bg-yellow-300 rounded-full"></div>
+                    </div>
+                    <span class="font-medium">Kuning</span>
+                  </button>
+                </li>
+                <li class="sangkar-besi-biru">
+                  <button class="flex items-center gap-2">
+                    <div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+                      <div class="w-full h-full bg-blue-500 rounded-full"></div>
+                    </div>
+                    <span class="font-medium">Biru</span>
+                  </button>
+                </li>
+                <li class="sangkar-besi-merah">
+                  <button class="flex items-center gap-2">
+                    <div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+                      <div class="w-full h-full bg-red-500 rounded-full"></div>
+                    </div>
+                    <span class="font-medium">Merah</span>
+                  </button>
+                </li>
+                <li class="sangkar-besi-hitam">
+                  <button class="flex items-center gap-2">
+                    <div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+                      <div class="w-full h-full bg-black rounded-full"></div>
+                    </div>
+                    <span class="font-medium">Hitam</span>
+                  </button>
+                </li>
+                <li class="sangkar-besi-putih">
+                  <button class="flex items-center gap-2">
+                    <div class="h-8 w-8 rounded-full p-1 border-[1.5px] border-gray-400">
+                      <div class="w-full h-full bg-slate-100 rounded-full"></div>
+                    </div>
+                    <span class="font-medium">Putih</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-2">
+              <h3 class="card-title text-2xl mb-4">Sangkar Aluminium Berwarna</h3>
+              <h2 class="text-primary text-3xl font-bold mb-6">Rp.299.000</h2>
               <a
                 href="https://wa.me/6282142853691?text=Saya%20ingin%20membeli%20sangkar"
                 class="btn btn-primary text-white"
